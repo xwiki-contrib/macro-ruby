@@ -17,7 +17,7 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-package org.xwiki.rendering.internal.macro.ruby;
+package org.xwiki.contrib.macro.ruby.internal;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
@@ -31,7 +31,6 @@ import org.xwiki.rendering.macro.script.JSR223ScriptMacroParameters;
  * A macro for executing ruby scripts.
  * 
  * @version $Id$
- * @since 2.0M2
  */
 @Component
 @Named("ruby")
