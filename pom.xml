@@ -32,7 +32,7 @@
   <version>9.1.2.0</version>
   <description>Rendering macro to execute Ruby script</description>
   <properties>
-    <!-- 
+    <!--
       * Indicate this extension provide a macro named "ruby" so it should not be installed along with another one
       * Old names of this module used for retro compatibility when resolving dependencies of old extensions
     -->
@@ -87,4 +87,29 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <developers>
+    <developer>
+      <id>tmortagne</id>
+      <name>Thomas Mortagne</name>
+      <email>thomas.mortagne at xwiki.com</email>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>xwikidev</id>
+      <name>XWiki Development Team</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/xwiki-contrib/macro-ruby.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-ruby.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/macro-ruby</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+   <system>jira</system>
+   <url>http://jira.xwiki.org/jira/browse/RUBY</url>
+ </issueManagement>
 </project>
