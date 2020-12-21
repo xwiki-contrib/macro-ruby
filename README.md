@@ -1,4 +1,4 @@
-# Kotlin macro
+# Ruby macro
 
 Rendering macro to execute Ruby scripts.
 
