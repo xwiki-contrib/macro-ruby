@@ -42,6 +42,9 @@
       org.xwiki.platform:xwiki-core-rendering-macro-ruby,
       org.xwiki.platform:xwiki-platform-rendering-macro-ruby
     </xwiki.extension.features>
+
+    <xwiki.release.jira.skip>false</xwiki.release.jira.skip>
+    <xwiki.issueManagement.jira.id>RUBY</xwiki.issueManagement.jira.id>
   </properties>
   <dependencies>
     <dependency>
