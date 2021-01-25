@@ -3,7 +3,7 @@
 Rendering macro to execute Ruby scripts.
 
 * Project Lead: [Thomas Mortagne](http://www.xwiki.org/xwiki/bin/view/XWiki/ThomasMortagne)
-* [Documentation & Downloads](http://extensions.xwiki.org/xwiki/bin/view/Extension/Ruby%20Macro/)
+* [Documentation & Downloads](https://extensions.xwiki.org/xwiki/bin/view/Extension/Ruby%20Macro/)
 * [Issue Tracker](http://jira.xwiki.org/browse/RUBY)
 * Communication: [Mailing List](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists), [IRC](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
 * [Development Practices](http://dev.xwiki.org)
