@@ -45,6 +45,8 @@
 
     <xwiki.release.jira.skip>false</xwiki.release.jira.skip>
     <xwiki.issueManagement.jira.id>RUBY</xwiki.issueManagement.jira.id>
+
+    <xwiki.enforcer.enforce-jakarta.annotation-api.skip>true</xwiki.enforcer.enforce-jakarta.annotation-api.skip>
   </properties>
   <dependencies>
     <dependency>
