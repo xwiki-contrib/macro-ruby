@@ -58,6 +58,7 @@
       <groupId>org.jruby</groupId>
       <artifactId>jruby</artifactId>
       <version>9.2.13.0</version>
+      <scope>runtime</scope>
     </dependency>
 
     <!-- Testing dependencies -->
