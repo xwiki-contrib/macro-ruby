@@ -30,7 +30,7 @@
   <artifactId>macro-ruby</artifactId>
   <name>Ruby Macro</name>
   <!-- Synchronized with JRuby version -->
-  <version>9.2.13.1</version>
+  <version>9.2.13.2-SNAPSHOT</version>
   <description>Rendering macro to execute Ruby script</description>
   <properties>
     <!--
@@ -117,7 +117,7 @@
     <connection>scm:git:git://github.com/xwiki-contrib/macro-ruby.git</connection>
     <developerConnection>scm:git:git@github.com:xwiki-contrib/macro-ruby.git</developerConnection>
     <url>https://github.com/xwiki-contrib/macro-ruby</url>
-    <tag>macro-ruby-9.2.13.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
