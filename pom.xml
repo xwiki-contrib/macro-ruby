@@ -25,12 +25,12 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>parent-platform</artifactId>
-    <version>12.10</version>
+    <version>13.10</version>
   </parent>
   <artifactId>macro-ruby</artifactId>
   <name>Ruby Macro</name>
   <!-- Synchronized with JRuby version -->
-  <version>9.2.13.2-SNAPSHOT</version>
+  <version>9.2.20.1-SNAPSHOT</version>
   <description>Rendering macro to execute Ruby script</description>
   <properties>
     <!--
@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.jruby</groupId>
       <artifactId>jruby</artifactId>
-      <version>9.2.13.0</version>
+      <version>9.2.20.1</version>
       <scope>runtime</scope>
     </dependency>
 
