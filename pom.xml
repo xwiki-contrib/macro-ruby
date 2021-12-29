@@ -119,9 +119,4 @@
     <url>https://github.com/xwiki-contrib/macro-ruby</url>
     <tag>HEAD</tag>
   </scm>
-
-  <issueManagement>
-   <system>jira</system>
-   <url>http://jira.xwiki.org/jira/browse/RUBY</url>
- </issueManagement>
 </project>
