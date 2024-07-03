@@ -30,7 +30,7 @@
   <artifactId>macro-ruby</artifactId>
   <name>Ruby Macro</name>
   <!-- Synchronized with JRuby version -->
-  <version>9.4.8.0</version>
+  <version>9.4.8.0.1-SNAPSHOT</version>
   <description>Rendering macro to execute Ruby script</description>
   <properties>
     <!--
