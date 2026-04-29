@@ -25,12 +25,12 @@
   <parent>
     <groupId>org.xwiki.contrib</groupId>
     <artifactId>parent-platform</artifactId>
-    <version>18.0.0</version>
+    <version>18.3.0</version>
   </parent>
   <artifactId>macro-ruby</artifactId>
   <name>Ruby Macro</name>
   <!-- Synchronized with JRuby version -->
-  <version>10.0.4.1-SNAPSHOT</version>
+  <version>10.0.5.0-SNAPSHOT</version>
   <description>Rendering macro to execute Ruby script</description>
   <properties>
     <!--
@@ -62,7 +62,37 @@
     <dependency>
       <groupId>org.jruby</groupId>
       <artifactId>jruby</artifactId>
-      <version>10.0.4.0</version>
+      <version>10.0.5.0</version>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+      	  <groupId>com.github.jnr</groupId>
+      	  <artifactId>jnr-ffi</artifactId>
+        </exclusion>
+        <exclusion>
+      	  <groupId>com.github.jnr</groupId>
+      	  <artifactId>jnr-posix</artifactId>
+        </exclusion>
+        <exclusion>
+      	  <groupId>com.github.jnr</groupId>
+      	  <artifactId>jffi</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- Add back excluded dependencies with the right versions (hope JRuby will still be fine with it) -->
+    <dependency>
+      <groupId>com.github.jnr</groupId>
+      <artifactId>jnr-ffi</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.jnr</groupId>
+      <artifactId>jnr-posix</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.jnr</groupId>
+      <artifactId>jffi</artifactId>
       <scope>runtime</scope>
     </dependency>
 
@@ -125,41 +155,4 @@
     <url>https://github.com/xwiki-contrib/macro-ruby</url>
     <tag>HEAD</tag>
   </scm>
-
-  <build>
-    <plugins>
-      <!-- Workaround a bug in XWiki 18.0.0 poms.
-           TODO: Remove when upgrading to XWiki 18.1+ -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <dependencies>
-          <dependency>
-            <groupId>org.xwiki.platform</groupId>
-            <artifactId>xwiki-platform-tool-enforcer-importmap</artifactId>
-            <version>${platform.version}</version>
-          </dependency>
-        </dependencies>
-        <executions>
-          <!-- Make sure declared importmap are valid. -->
-          <execution>
-            <id>enforce-valid-javascript-importmap</id>
-            <!-- Make sure the enforcer is performed after the artifacts for the current project are produced to be
-            able to check for the validity of path the the module itself.
-             -->
-            <phase>verify</phase>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <skip>${xwiki.enforcer.valid-importmap.skip}</skip>
-              <rules>
-                <javascriptImportMapCheck />
-              </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 </project>
