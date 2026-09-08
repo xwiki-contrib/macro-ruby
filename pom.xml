@@ -30,7 +30,7 @@
   <artifactId>macro-ruby</artifactId>
   <name>Ruby Macro</name>
   <!-- Synchronized with JRuby version -->
-  <version>10.1.0.1-SNAPSHOT</version>
+  <version>10.1.1.0-SNAPSHOT</version>
   <description>Rendering macro to execute Ruby script</description>
   <properties>
     <!--
@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.jruby</groupId>
       <artifactId>jruby</artifactId>
-      <version>10.1.0.0</version>
+      <version>10.1.1.0</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -76,6 +76,22 @@
         <exclusion>
       	  <groupId>com.github.jnr</groupId>
       	  <artifactId>jffi</artifactId>
+        </exclusion>
+        <exclusion>
+      	  <groupId>com.github.jnr</groupId>
+      	  <artifactId>jnr-constants</artifactId>
+        </exclusion>
+        <exclusion>
+      	  <groupId>org.ow2.asm</groupId>
+      	  <artifactId>asm</artifactId>
+        </exclusion>
+        <exclusion>
+      	  <groupId>org.ow2.asm</groupId>
+      	  <artifactId>asm-commons</artifactId>
+        </exclusion>
+        <exclusion>
+      	  <groupId>org.ow2.asm</groupId>
+      	  <artifactId>asm-util</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -93,6 +109,26 @@
     <dependency>
       <groupId>com.github.jnr</groupId>
       <artifactId>jffi</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.jnr</groupId>
+      <artifactId>jnr-constants</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-commons</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-util</artifactId>
       <scope>runtime</scope>
     </dependency>
 
